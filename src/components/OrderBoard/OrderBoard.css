@@ -1,0 +1,18 @@
+.order-board {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.order-board .left-side,
+.order-board .right-side {
+    flex: 1;
+}
+
+.order-board .left-side {
+    background: cornflowerblue;
+}
+
+.order-board .right-side {
+    background: bisque;
+}
