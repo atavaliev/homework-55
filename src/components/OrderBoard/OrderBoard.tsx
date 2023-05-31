@@ -3,15 +3,10 @@ import IngredientList from "../IngredientList/IngredientList";
 import Burger from "../Burger/Burger";
 import TotalPrice from "../TotalPrice/TotalPrice";
 import './OrderBoard.css';
+import {IOrder} from "../../types";
 
 
-interface IOrder {
-    name: string;
-    count: number;
-};
-
-const OrderBoard = () => {
-
+const OrderBoard:React.FC = () => {
     const [ingredients, setIngredients] = useState<IOrder[]>([
         {name: 'Meat', count: 0},
         {name: 'Cheese', count: 0},
@@ -25,7 +20,7 @@ const OrderBoard = () => {
                 <IngredientList/>
             </div>
             <div className="right-side">
-                <Burger/>
+                <Burger ingredientList={ingredients}/>
                 <TotalPrice/>
             </div>
         </>

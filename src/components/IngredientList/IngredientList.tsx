@@ -9,6 +9,7 @@ const IngredientList: React.FC = () => {
             {
                 INGREDIENTS.map(i => {
                         return <IngredientItem
+                            key={i.name + Date.now()}
                             name={i.name}
                             price={i.price}
                             imgSrc={i.imgSrc}/>
