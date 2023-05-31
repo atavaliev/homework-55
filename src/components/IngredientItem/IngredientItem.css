@@ -1,0 +1,46 @@
+.ingredient-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 80%;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.ingredient-item img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+    object-fit: contain;
+    border: 2px solid #281E1EFF;
+    cursor: pointer;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.ingredient-item .name {
+    margin-left: 50px;
+}
+
+
+.ingredient-item .price {
+    margin: 0 10px;
+}
+
+.ingredient-item .decrease {
+    margin-left: auto;
+}
+
+.ingredient-item .delete {
+    margin-left: 10px;
+}
+
+
+.ingredient-item .decrease,
+.ingredient-item .increase,
+.ingredient-item .delete {
+    cursor: pointer;
+}

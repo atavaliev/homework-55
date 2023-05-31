@@ -4,6 +4,7 @@ import OrderBoard from "./components/OrderBoard/OrderBoard";
 
 
 function App() {
+
     return (
         <div className="order-board">
             <OrderBoard/>

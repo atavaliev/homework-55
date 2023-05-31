@@ -11,6 +11,9 @@
 
 .order-board .left-side {
     background: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .order-board .right-side {
