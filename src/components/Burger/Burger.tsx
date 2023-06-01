@@ -6,12 +6,8 @@ type TProps = {
     ingredientList: IOrder[];
 }
 
-
 const Burger: React.FC<TProps> = ({ingredientList}) => {
 
-    {
-        console.log(ingredientList)
-    }
     return (
         <div className="Burger">
 
@@ -21,9 +17,11 @@ const Burger: React.FC<TProps> = ({ingredientList}) => {
             </div>
             <>
                 {
-                    ingredientList.map(i => {
-                     return  (<div className={i.name}/>)
-                    })
+                    ingredientList.map(i => (
+                        Array.from({ length: i.count }, (_, index) => (
+                            <div className={i.name} key={index} />
+                        ))
+                    ))
                 }
             </>
             <div className="BreadBottom"></div>

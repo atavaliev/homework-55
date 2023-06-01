@@ -8,10 +8,10 @@ import {IOrder} from "../../types";
 
 const OrderBoard:React.FC = () => {
     const [ingredients, setIngredients] = useState<IOrder[]>([
-        {name: 'Meat', count: 0},
-        {name: 'Cheese', count: 0},
-        {name: 'Bacon', count: 0},
-        {name: 'Salad', count: 0}
+        {name: 'Cheese', count: 2},
+        {name: 'Bacon', count: 1},
+        {name: 'Meat', count: 3},
+        {name: 'Salad', count: 1}
     ]);
 
     return (
