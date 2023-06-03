@@ -1,9 +1,13 @@
 import React from 'react';
 
-const TotalPrice:React.FC = () => {
+type TProps = {
+    totalPrice:number;
+}
+
+const TotalPrice:React.FC<TProps> = ({totalPrice}) => {
     return (
-        <div>
-            Price
+        <div className="price">
+          Price: {totalPrice}
         </div>
     );
 };

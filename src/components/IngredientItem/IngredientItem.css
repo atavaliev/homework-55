@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
 
+    height: 80px;
     width: 80%;
     background: #fff;
     padding: 10px 20px;
@@ -23,6 +24,10 @@
 
 .ingredient-item .name {
     margin-left: 50px;
+}
+
+.ingredient-item .quantity {
+    margin: 0 10px;
 }
 
 
