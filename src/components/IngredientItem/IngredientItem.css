@@ -30,19 +30,36 @@
     margin: 0 10px;
 }
 
-
 .ingredient-item .price {
     margin: 0 10px;
+}
+
+.ingredient-item .decrease,
+.ingredient-item .increase {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ingredient-item .decrease {
     margin-left: auto;
 }
-
-.ingredient-item .delete {
-    margin-left: 10px;
+.ingredient-item .increase {
+    margin-right: 30px;
 }
 
+.ingredient-item .delete svg{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.ingredient-item .delete:hover svg {
+    fill:red;
+}
 
 .ingredient-item .decrease,
 .ingredient-item .increase,
